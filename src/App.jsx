@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import './App-responsive.css'
 import './reset.css'
 import Gif from './components/gif'
 
@@ -24,7 +25,7 @@ function App() {
               <a href="#">Contato</a>
             </div>
           </nav>
-          <div>
+          <div className='btn-div'>
             <a href="#" className='theme-btn'>🌑</a>
           </div>
 

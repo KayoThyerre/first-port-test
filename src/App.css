@@ -1,6 +1,6 @@
 main {
-    width: 100vh;
-    height: 100vh;
+    width: 100vw;
+    height: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -8,7 +8,10 @@ main {
 body {
     margin: 0 auto;
     max-width: 1120px;
+    display: flex;
 }
+
+/* ----------------   HEADER  ---------------------- */
 
 .header {
     display: flex;
@@ -23,24 +26,40 @@ body {
 .welcome {
     display: flex;
     align-items: center;
+    margin: 0px 15px 0px 15px;
 }
 
 .welcome h1{
     display: flex;
     align-items: center;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px;
-    width: 200px;    
+    width: 220px;    
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0px 50px 0px 50px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav-container div {
+    padding: 0px 50px 0px 50px;
+}
+
+.nav-container div a:hover {
+    font-weight: 600;
+    transition: 0.15s ease-in-out;
 }
 
 .theme-btn {
-    margin: 50px;
+    padding: 4px 3px 4px 3px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    border-radius: 35px;
 }
