@@ -43,4 +43,13 @@
         display: flex;
         justify-content: center;
     }
+
+    .section-cv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dev-img {
+        display: none;
+    }
 }
