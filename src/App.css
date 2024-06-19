@@ -12,6 +12,7 @@ body {
 
 
 .header {
+    background-color: #000;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,6 +24,10 @@ body {
     color: #dc3546;
     font-size: 2.5rem;
     padding-left: 20px;
+}
+
+.header .welcome span {
+    color: #FFF;
 }
 
 .welcome {
@@ -37,7 +42,7 @@ body {
     font-weight: 600;
     font-size: 25px;
     padding: 10px;
-    width: 220px;    
+    width: 220px; 
 }
 
 .nav-container {
@@ -49,6 +54,7 @@ body {
 .nav-container li a {
     padding: 10px;
     font-size: 1.3rem;
+    color: #FFF;
 }
 
 .nav-container li a:hover {
@@ -59,6 +65,7 @@ body {
 
 .theme-btn {
     padding: 4px 3px 4px 3px;
+    background-color: #FFF;
     margin: 20px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     border-radius: 35px;
@@ -105,8 +112,19 @@ body {
 .section-cv div a {
     justify-self: start;
     padding: 15px 40px;
-    border-radius: 50px;
+    border-radius: 20px;
     border: 2px solid white;
+}
+
+.section-cv div a:hover {
+    font-weight: 800;
+    color: #dc3546;
+    border-color: #dc3546;
+    transition: 0.15s ease-in-out;
+}
+
+.section-cv div a:hover::after {
+    content: "🌑";
 }
 
 .dev-img {
