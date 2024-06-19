@@ -34,7 +34,7 @@ function App() {
         </nav>
 
         <div className='btn-div'>
-          <a href="#" className='theme-btn'>☀️</a>
+          <a href="#" className='theme-btn'>🌑</a>
         </div>
       </header>
 
