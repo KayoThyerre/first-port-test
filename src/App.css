@@ -1,6 +1,6 @@
 main {
-  width: 100vw;
-  flex: 1;
+    width: 100vw;
+    flex: 1;
 }
 
 body {
@@ -36,13 +36,13 @@ body {
     margin: 0px 15px 0px 15px;
 }
 
-.welcome h1{
+.welcome h1 {
     display: flex;
     align-items: center;
     font-weight: 600;
     font-size: 25px;
     padding: 10px;
-    width: 220px; 
+    width: 220px;
 }
 
 .nav-container {
@@ -61,7 +61,7 @@ body {
     font-weight: 600;
     transition: 0.15s ease-in-out;
 }
-    
+
 
 .theme-btn {
     padding: 4px 3px 4px 3px;
@@ -89,14 +89,27 @@ body {
 
 .theme-btn:hover::before {
     content: "☀️";
-    color: black; /* Cor da lua */
+    color: black;
+    /* Cor da lua */
     transition: 0.15s ease-in-out;
 }
 
 /*        descripton main           */
 
+@keyframes smoothShow {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    } 
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
 
 .section-cv {
+    animation: smoothShow 1s forwards;
     background-color: #000;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -120,10 +133,32 @@ body {
     font-weight: 600;
 }
 
+.section-cv .typing {
+    height: 1em;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.typing::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink 0.8s infinite;
+}
+
+
 .section-cv div p,
 .section-cv div a {
     background-color: #000;
-    color: white; 
+    color: white;
 }
 
 .section-cv div p {
@@ -146,6 +181,5 @@ body {
 }
 
 .dev-img {
-    /* border-radius: 200px; */
     max-width: 100%;
 }
