@@ -69,6 +69,28 @@ body {
     margin: 20px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     border-radius: 35px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: transparent;
+}
+
+.theme-btn::before {
+    content: "🌑";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.theme-btn:hover::before {
+    content: "☀️";
+    color: black; /* Cor da lua */
+    transition: 0.15s ease-in-out;
 }
 
 /*        descripton main           */
@@ -121,10 +143,6 @@ body {
     color: #dc3546;
     border-color: #dc3546;
     transition: 0.15s ease-in-out;
-}
-
-.section-cv div a:hover::after {
-    content: "🌑";
 }
 
 .dev-img {
