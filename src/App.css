@@ -6,6 +6,7 @@ main {
 body {
     margin: 0 auto;
     max-width: 1200px;
+    background-color: #000;
 }
 
 /* ----------------   HEADER  ---------------------- */
@@ -60,6 +61,7 @@ body {
 .nav-container li a:hover {
     font-weight: 600;
     transition: 0.15s ease-in-out;
+    color: #E22223;
 }
 
 
@@ -94,7 +96,7 @@ body {
     transition: 0.15s ease-in-out;
 }
 
-/*        descripton main           */
+/*        DESCRIPTION          */
 
 @keyframes smoothShow {
     from {
@@ -182,4 +184,146 @@ body {
 
 .dev-img {
     max-width: 100%;
+}
+
+
+/*       MAIN STYLES          */
+
+main {
+    background-color: #111;
+    color: #FFF;
+    width: 100%;
+}
+
+main .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+main .about-title {
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+main .about-title h1 {
+    font-size: 2.2rem;
+    color: #dc3546;
+    margin-bottom: 15px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+main .about-title p {
+    color: #707070;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+main .about-title div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+main .about-title span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #dc3546;
+}
+
+main .about img {
+    animation: sideSection .5s ease-in-out forwards;
+    cursor: pointer;
+    grid-row: 2;
+    max-width: 100%;
+    border-radius: 4px;
+    filter: blur(0);
+}
+
+main .about img:hover {
+    transition: .5s ease-in;
+    filter: blur(1.5px);
+}
+
+main .about-content {
+    animation: upSection .6s ease-in-out forwards;
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #707070;
+}
+
+main .about-content .text {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .about-content .text h1{
+    font-size: 2rem;
+    color: #FFF;
+    grid-column: 1/-1;
+}
+
+main .about-content .text h1::after {
+    background-color: #dc3546;
+    height: 6px;
+    width: 60px;
+    margin: 20px 0;
+    content: '';
+    display: block;
+    border-radius: 5px;
+}
+
+main .about-content .text p {
+    font-size: 1.3rem;
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+main .about-content .about-info {
+    margin-top: 20px;   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    gap: 15px;
+    align-items: center;
+}
+
+main .about-content .about-info i {
+    color: #dc3546;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+}
+
+main .about-content .about-info p {
+    font-size: .9rem;
+}
+
+@keyframes upSection {
+    from {
+        transition: .5s;
+        transform: translate3d(60px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes sideSection {
+    from {
+        transition: .5s;
+        transform: translate3d(-60px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
 }

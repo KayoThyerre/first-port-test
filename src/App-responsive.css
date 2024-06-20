@@ -13,13 +13,15 @@
 }
 
 @media (max-width: 600px) {
+
+    /*              HEADER                 */
     .header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 400px;
+        height: 600px;
     }
     .welcome {
         display: flex;
@@ -34,11 +36,12 @@
         align-items: center;
         width: 100%;
     }
-    .nav-container div{
-        padding-bottom: 20px;
+
+    .nav-container li{
+        margin-bottom: 15px;
     }
+
     .btn-div {
-        padding: 20px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -52,4 +55,22 @@
     .dev-img {
         display: none;
     }
+
+     /*              MAIN                 */
+
+    main .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .about-content .text h1{
+        font-size: 1.8rem;
+    }
+
+    main .about-content .about-info {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
 }
