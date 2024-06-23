@@ -92,7 +92,6 @@ body {
 .theme-btn:hover::before {
     content: "☀️";
     color: black;
-    /* Cor da lua */
     transition: 0.15s ease-in-out;
 }
 
@@ -112,7 +111,6 @@ body {
 
 .section-cv {
     animation: smoothShow 1s forwards;
-    background-color: #000;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
@@ -122,7 +120,6 @@ body {
 }
 
 .section-cv div {
-    background-color: #000;
     margin-top: 120px;
     align-self: start;
     display: grid;
@@ -130,7 +127,6 @@ body {
 }
 
 .section-cv div h2 {
-    background-color: #000;
     color: white;
     font-weight: 600;
 }
@@ -159,7 +155,6 @@ body {
 
 .section-cv div p,
 .section-cv div a {
-    background-color: #000;
     color: white;
 }
 

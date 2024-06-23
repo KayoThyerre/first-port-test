@@ -15,10 +15,10 @@ const Header = () => (
         <li><a href="#portifolio">Portfolio</a></li>
         <li><a href="#contact">Contato</a></li>
       </nav>
-  
       <div className='btn-div'>
         <a href="#" className='theme-btn'>🌑</a>
       </div>
+      <i className="fa-solid fa-bars"></i>
     </header>
   );
   

@@ -1,76 +1,39 @@
-@media (max-width: 850px) {
-    .header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 250px;
-    }
-    .nav-container {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-}
+@media (max-width: 800px){
 
-@media (max-width: 600px) {
+    /* -------- HEADER -------- */
 
-    /*              HEADER                 */
-    .header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 600px;
-    }
-    .welcome {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-    }
-    .nav-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .nav-container li{
-        margin-bottom: 15px;
-    }
-
-    .btn-div {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .section-cv {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dev-img {
+    header .nav-container,
+    header .btn-div {
         display: none;
     }
 
-     /*              MAIN                 */
-
-    main .about {
-        display: flex;
-        flex-direction: column;
+    header i {
+        color: #fff;
+        font-size: 3rem;
     }
 
-    main .about-content .text h1{
-        font-size: 1.8rem;
+    /* -------- WELCOME -------- */
+
+    .section-cv img {
+        display: none;
     }
 
-    main .about-content .about-info {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
+    .section-cv {
+        background-image: url(./assets/eu2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 
+    /* -------- MAIN ----------- */
+
+    main .about img {
+        grid-column: 1/-1;
+        justify-self: center;
+        border-radius: 5%;
+    }
+
+    main .about-content {
+        grid-column: 1/-1;
+    }
 }
