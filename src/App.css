@@ -12,7 +12,7 @@ body {
 /* ----------------   HEADER  ---------------------- */
 
 
-.header {
+header {
     background-color: #000;
     display: flex;
     justify-content: space-around;
@@ -21,13 +21,13 @@ body {
     height: 100px;
 }
 
-.header .welcome h1 {
+header .welcome h1 {
     color: #dc3546;
     font-size: 2.5rem;
     padding-left: 20px;
 }
 
-.header .welcome span {
+header .welcome span {
     color: #FFF;
 }
 
@@ -64,6 +64,7 @@ body {
     color: #E22223;
 }
 
+/* dark theme btn */
 
 .theme-btn {
     padding: 4px 3px 4px 3px;
@@ -129,6 +130,7 @@ body {
 .section-cv div h2 {
     color: white;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .section-cv .typing {

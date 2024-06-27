@@ -2,13 +2,20 @@
 
     /* -------- HEADER -------- */
 
+
+    header {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
     header .nav-container,
     header .btn-div {
         display: none;
     }
 
     header i {
-        color: #fff;
+        color: #f7f7f7;
         font-size: 3rem;
     }
 
@@ -24,6 +31,11 @@
         background-size: contain;
         background-position: center;
     }
+
+    .section-cv .typing {
+        margin-bottom: 3rem;
+    }
+
 
     /* -------- MAIN ----------- */
 
