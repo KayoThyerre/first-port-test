@@ -5,6 +5,7 @@ import './reset.css'
 import Header from './components/Header'
 import Welcome from './components/Welcome'
 import Main from './components/Main'
+import Proeficiency from './components/Proeficiency'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       < Header/>
       < Welcome/>      
       < Main/>
+      < Proeficiency/>
       
       <footer>
 

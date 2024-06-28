@@ -6,15 +6,6 @@ import { faCalendarDays, faLaptopCode, faLocationDot, faGlobe, faFlag, faPhoneVo
 const Main = () => (
     <main>
         <article aria-label='seção sobre mim' className='about'>
-          <div className="about-title">
-            <h1>Sobre mim</h1>
-            <p>Perfil profissional - Tudo sobre mim</p>
-            <div aria-label='seção ilustrativa de botões'>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
           <img src={myPhoto} alt="imagem de uma pessoa ilutrativa" />
           <div className="about-content" id="about">
             <div className="text">
