@@ -201,43 +201,75 @@ main .about {
     margin-top: 60px;
 }
 
+main .about-title {
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
 
+.about-title h1 {
+    font-size: 2.5rem;
+    color: #ff5d56;
+    margin-bottom: 15px;
+    font-family: 'Berkshire Swash', cursive;
+}
 
-main .about img {
-    animation: sideSection .5s ease-in-out forwards;
+.about-title p {
+    color: #707070;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.about-title div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.about-title span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #dc3546;
+}
+
+.about img {
     cursor: pointer;
-    /* grid-row: 2; */
+    grid-row: 2;
     max-width: 100%;
     border-radius: 10px;
     filter: blur(0);
+    animation: sideSection .5s ease-in-out backwards;
 }
 
-main .about img:hover {
+.about img:hover {
     transition: .5s ease-in;
-    filter: blur(1.5px);
+    filter: blur(2px);   
 }
 
-main .about-content {
+.about-content {
     animation: upSection .6s ease-in-out forwards;
-    grid-column: 2/-1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-column: 2/-1;
     color: #707070;
+    grid-template-columns: 1fr 1fr;
 }
 
-main .about-content .text {
+.about-text {
     display: grid;
     grid-column: 1/-1;
     grid-template-columns: 1fr 1fr;
 }
 
-main .about-content .text h1{
-    font-size: 2rem;
+.about-text h1 {
+    font-size: 2.3rem;
     color: #FFF;
     grid-column: 1/-1;
 }
 
-main .about-content .text h1::after {
+.about-text h1::after {
     background-color: #dc3546;
     height: 6px;
     width: 60px;
@@ -247,14 +279,14 @@ main .about-content .text h1::after {
     border-radius: 5px;
 }
 
-main .about-content .text p {
+.about .about-text p{
     font-size: 1.3rem;
     grid-row: 2;
     grid-column: 1/-1;
 }
 
-main .about-content .about-info {
-    margin-top: 20px;   
+.about-info {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/-1;
@@ -262,15 +294,15 @@ main .about-content .about-info {
     align-items: center;
 }
 
-main .about-content .about-info i {
+.about-info i {
     color: #dc3546;
     display: inline-block;
     padding-right: 15px;
     font-size: 1.5rem;
 }
 
-main .about-content .about-info p {
-    font-size: .9rem;
+.about-info p {
+    font-size: 1rem;
 }
 
 @keyframes upSection {
@@ -303,5 +335,5 @@ main .about-content .about-info p {
 }
 
 .proeficiencies {
-
+    
 }
