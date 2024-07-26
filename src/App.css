@@ -77,6 +77,8 @@ header .welcome span {
     text-align: center;
     font-size: 1.2rem;
     color: transparent;
+    display: none; 
+    /* ativar o botão depois de estar pronto */
 }
 
 .theme-btn::before {
@@ -235,13 +237,22 @@ main .about-title {
     background-color: #dc3546;
 }
 
+.about {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+}
+
 .about img {
+    animation: sideSection .5s ease-in-out backwards;
     cursor: pointer;
     grid-row: 2;
     max-width: 100%;
     border-radius: 10px;
     filter: blur(0);
-    animation: sideSection .5s ease-in-out backwards;
 }
 
 .about img:hover {

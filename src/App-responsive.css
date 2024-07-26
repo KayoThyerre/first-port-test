@@ -2,26 +2,22 @@
 
     /* -------- HEADER -------- */
 
-
     header {
-        display: flex;
-        justify-content: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 30px 20px;
     }
-
-    header .nav-container,
-    header .btn-div {
+    
+    header .nav-container {
         display: none;
     }
 
     header i {
         color: #f7f7f7;
         font-size: 3rem;
-        transition: ease-in-out 0.2s;
     }
 
     /* -------- WELCOME -------- */
-
+    
     .section-cv img {
         display: none;
     }
@@ -33,20 +29,27 @@
         background-position: center;
     }
 
-    .section-cv .typing {
-        margin-bottom: 3rem; 
+    .section-cv p {
+        padding-top: 30px;
     }
 
+    .section-cv div {
+        margin-top: 0;
+    }
 
     /* -------- MAIN ----------- */
-
-    main .about img {
+    
+    .about img {
         grid-column: 1/-1;
         justify-self: center;
-        border-radius: 5%;
+        width: 70%;
     }
 
-    main .about-content {
+    .about-content {
         grid-column: 1/-1;
     }
+}
+
+@media (max-width: 550px) {
+    
 }

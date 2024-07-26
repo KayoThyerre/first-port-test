@@ -32,9 +32,9 @@ const Header = () => {
         </i>
 
       </nav>
-      <div className='btn-div'>
+      {/* <div className='btn-div'>
         <a href="#" className='theme-btn'>🌑</a>
-      </div>
+      </div> */}
     </header>
   )
 };
