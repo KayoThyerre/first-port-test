@@ -203,7 +203,7 @@ main .about {
     margin-top: 60px;
 }
 
-main .about-title {
+.about-title {
     margin: 30px 0;
     grid-column: 1/-1;
     text-align: center;
@@ -342,9 +342,85 @@ main .about-title {
     color: #FFF;
     margin-top: -30px;
     background-color: #151515;
-    padding-top: 60px;
+    padding: 60px;
 }
 
-.proeficiencies {
-    
+.my-proeficiencies {
+    padding: 60px;
+}
+
+.my-proeficiencies ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-proeficiencies ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    align-content: center;
+    min-width: 300px;
+    background-color: #222;
+    border-radius: 5px;
+}
+
+.my-proeficiencies ul li i {
+    font-size: 2.8rem;
+    color: #dc3546;
+}
+
+.my-proeficiencies ul li h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.my-proeficiencies ul li p {
+    color: #707070;
+    font-size: 1.1rem;
+}
+
+.my-proeficiencies ul li::before {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 5px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid red;
+    border-right: 2px solid transparent;
+}
+
+.my-proeficiencies ul li::after {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 5px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    border-bottom: 2px solid red;
+    border-left: 2px solid transparent;
+}
+
+.my-proeficiencies li:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+}
+
+.my-proeficiencies li:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
 }

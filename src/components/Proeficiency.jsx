@@ -6,6 +6,9 @@ import { faFileCode } from "@fortawesome/free-solid-svg-icons"; // Usado para o 
 const Proeficiency = () => {
     return (
         <section className="proeficiencies">
+            <div className="about-title">
+                <h1>Habilidades</h1>                
+            </div>
             <div className="my-proeficiencies">
                 <ul aria-label="Navegação secundária">
                     <li>
