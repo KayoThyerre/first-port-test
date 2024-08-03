@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays, faLaptopCode, faLocationDot, faGlobe, faFlag, faPhoneVolume, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Main = () => (
-  <main>
+  <main id="about">
     <article aria-label='seção sobre mim' className='about'>
       <div className="about-title">
         <h1>Sobre mim</h1>

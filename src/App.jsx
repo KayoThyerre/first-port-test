@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Welcome from './components/Welcome'
 import Main from './components/Main'
 import Proeficiency from './components/Proeficiency'
+import MyResume from './components/Resume'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       < Welcome/>      
       < Main/>
       < Proeficiency/>
+      < MyResume/>
       
       <footer>
 

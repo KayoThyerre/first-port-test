@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faHtml5, faJsSquare, faCss3Alt, faNodeJs } from "@fortawesome/free-brands-svg-icons";
-import { faFileCode } from "@fortawesome/free-solid-svg-icons"; // Usado para o TypeScript
+import { faFileCode } from "@fortawesome/free-solid-svg-icons"; 
 
 const Proeficiency = () => {
     return (

@@ -11,6 +11,19 @@
         display: none;
     }
 
+    header .nav-container.active {
+        background: linear-gradient(rgba(0, 0, 0, 0.176), rgba(68, 65, 65, 0.674));
+        position: absolute;
+        display: grid;
+        top: 50px;
+        z-index: 2;
+        padding: 30px;
+        font-size: 3rem;
+        border-radius: 0 0 10px 10px;
+        right: 70px;
+        animation: upSection .8s ease-in-out forwards;
+    }
+
     header i {
         color: #f7f7f7;
         font-size: 3rem;
@@ -23,18 +36,23 @@
     }
 
     .section-cv {
+        padding-top: 200px;
         background-image: url(./assets/eu2.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
     }
 
+    .section-cv h2 {
+        font-size: 1.7rem;
+    }
+
     .section-cv p {
-        padding-top: 30px;
+        padding-top: 70px;
     }
 
     .section-cv div {
-        margin-top: 0;
+        margin-top: 0
     }
 
     /* -------- MAIN ----------- */

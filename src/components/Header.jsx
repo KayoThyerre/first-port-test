@@ -12,16 +12,23 @@ const Header = () => {
     setIsMenuActive(prevState => !prevState);
   };
 
+  const handleScrollToTop = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <header>
       <div className='welcome'>
         <Gif />
         <h1>Kayo <span>Alarcon</span></h1>
       </div>
-
       <nav>
-        <ul className='nav-container'>
-          <li><a href="#home">Home</a></li>
+        <ul className={`nav-container ${isMenuActive ? 'active' : ''}`}>
+          <li><a href="#home" onClick={handleScrollToTop}>Home</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#resume">Resumo</a></li>
           <li><a href="#portifolio">Portfolio</a></li>
@@ -30,7 +37,6 @@ const Header = () => {
         <i onClick={handleMenuToggle}>
           <FontAwesomeIcon icon={isMenuActive ? faTimes : faBars} className="fa-solid" />
         </i>
-
       </nav>
       {/* <div className='btn-div'>
         <a href="#" className='theme-btn'>🌑</a>
