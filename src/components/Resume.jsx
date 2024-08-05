@@ -31,7 +31,23 @@ const MyResume = () => (
                     <li><i><FontAwesomeIcon icon={faCircle} /></i></li>
                 </ul>                
             </div>
-            <h2 className="Formação"><i><FontAwesomeIcon icon={faBookOpenReader} /></i>Educação</h2>
+            <h2 className="education"><i><FontAwesomeIcon icon={faBookOpenReader} /></i>Educação</h2>
+            <div className="education-content">
+                <div>
+                    <span>2016-2021</span>
+                    <h3>Engenharia Mecânica, Bacharelado - UNIFEG</h3>
+                    <p>Sobre o que é a faculdade.</p>
+                </div>
+                <div>
+                    <span>2023-2025</span>
+                    <h3>Sistemas para internet - UNICESUMAR</h3>
+                    <p>Sobre o que é a faculdade.</p>
+                </div>
+                <ul>
+                    <li><i><FontAwesomeIcon icon={faCircle} /></i></li>
+                    <li><i><FontAwesomeIcon icon={faCircle} /></i></li>
+                </ul>
+            </div>
         </div>
     </section>
 )

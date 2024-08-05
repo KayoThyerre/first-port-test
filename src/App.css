@@ -443,3 +443,9 @@ main .about {
     border-bottom: 2px solid red;
     border-left: 2px solid red;
 }
+
+/*         RESUME           */
+
+.my-resume {
+    color: white;
+}
