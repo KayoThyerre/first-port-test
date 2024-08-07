@@ -449,3 +449,62 @@ main .about {
 .my-resume {
     color: white;
 }
+
+.generic-resume {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+}
+
+.generic-resume h2 {
+    font-size: 1.5rem;
+    background-color: #dc3546;
+    justify-self: start;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.generic-resume h2 i {
+    margin-right: 1rem;
+}
+
+.experience {
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.education {
+    margin-bottom: 30px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.experience-content ul, .education-content ul {
+    color: #dc3546;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.generic-resume .experience-content div {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.generic-resume .experience-content div::before {
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #222;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    display: inline-block;
+}
