@@ -492,14 +492,15 @@ main .about {
     justify-content: center;
 }
 
-.generic-resume .experience-content div {
+.generic-resume .experience-content div, .education-content div {
     background-color: #222;
     padding: 40px;
     border-radius: 5px;
     position: relative;
 }
 
-.generic-resume .experience-content div::before {
+.generic-resume .experience-content div::before,
+.generic-resume .education-content div::before {
     content: '';
     border-right: 30px solid transparent;
     border-bottom: 30px solid #222;
@@ -508,3 +509,21 @@ main .about {
     left: 30px;
     display: inline-block;
 }
+
+.generic-resume .experience-content div span,
+.education-content div span {
+    color: #dc3546;
+    font-weight: bold;
+}
+
+.generic-resume .experience-content div h3,
+.education-content div h3 {
+    margin: 10px 0px;
+}
+
+.generic-resume .experience-content div p,
+.education-content div p {
+    color: #707070;
+    font-size: 1.1rem;
+}
+
