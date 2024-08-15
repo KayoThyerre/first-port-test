@@ -492,6 +492,10 @@ main .about {
     justify-content: center;
 }
 
+.experience-content ul li.ativo, .education-content ul li.ativo {
+    color: #707070;
+}
+
 .generic-resume .experience-content div, .education-content div {
     background-color: #222;
     animation: sideSection .5s ease-in-out forwards;
@@ -533,3 +537,152 @@ main .about {
     font-size: 1.1rem;
 }
 
+/* -------- PROJECTS --------- */
+
+.projects {
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    background-color: #151515;
+}
+
+.projects ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projects-models ul li {
+    cursor: pointer;
+    background-color: #222;
+    border: 1px solid #333;
+    padding: 6px 20px;
+    color: #707070;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, color 0.8s ease-in-out;
+}
+
+@keyframes animationImageButton {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -40px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.projects-models ul li.active {
+    background-color: #dc3546;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.projects-box {
+    display: grid;
+}
+
+.projects-box ul{
+    display: grid;
+    margin-top: 60px;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.projects-box ul li {
+    max-width: 100%;
+    height: 100%;
+    animation: animationImageButton 2s ease-in-out forwards;
+}
+
+.projects-box ul li img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-box ul li img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.projects a {
+    background-color: #222;
+    font-size: 1.3rem;
+    justify-self: center;
+    padding: 20px 40px;
+    margin-top: 60px;
+    border: 1px #333;
+    border-radius: 6px;
+    color: #707070;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.projects a:hover {
+    background-color: #dc3546;
+    color: #000;
+    font-weight: bold;
+}
+
+/* -------- CONTACT --------- */
+
+.contact {
+    color: white;
+    padding: 30px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.social-media li {
+    background-color: #212020;
+    border-radius: 50%;
+    border: 1px solid #333;
+    padding: 7px 10px;
+}
+
+.social-media li:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #dc3546;
+    font-weight: bold;
+    transition: background-color 1s ease, color 1s ease;
+    transform: scale(1.2);
+}
+
+.social-media li i {
+    font-size: 2rem;
+}
+
+.contact ul li i {
+    color: white;
+}
+
+.social-media::before {
+    content: '';
+    height: 5px;
+    width: 200px;
+    background-color: #333;
+    bottom: -30px;
+    position: absolute;
+}
+
+.footer-comercial {
+    text-align: center;
+    margin: 60px auto;
+    font-size: 1.5rem;
+}

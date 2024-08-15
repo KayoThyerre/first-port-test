@@ -51,7 +51,7 @@ const MyResume = () => {
                 <h1>Resumo Profissional</h1>
             </div>
             <div className="generic-resume">
-                <h2 className="Experiencia">
+                <h2 className="experience">
                     <i><FontAwesomeIcon icon={faPeopleGroup} /></i>Experiencia
                 </h2>
                 <div className="experience-content">

@@ -8,6 +8,8 @@ import Welcome from './components/Welcome'
 import Main from './components/Main'
 import Proeficiency from './components/Proeficiency'
 import MyResume from './components/Resume'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
       < Main/>
       < Proeficiency/>
       < MyResume/>
+      < Projects/>
+      < Contact/>
       
       <footer>
 
