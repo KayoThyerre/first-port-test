@@ -19,7 +19,14 @@ const Main = () => (
       <div className="about-content">
         <div className="about-text">
           <h1>Olá, eu sou o Kayo !</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem perspiciatis, voluptatibus atque, nobis dicta sequi doloremque et fugiat ex quasi minus distinctio. Inventore velit officiis accusamus neque asperiores. Ipsa, mollitia.</p>
+          <p>Eu sou um desenvolvedor FrondEnd, em aprendizado para me tornar um desenvolvedor FullStack.
+
+            Atualmente estou focado nas linguagens de HTML | CSS | JavaScript | React.
+            Sou uma pessoa adaptável que adora trabalhar em grupo e compartilhar conhecimento com as pessoas.
+            Focado em sempre manter o código limpo e da melhor maneira para o entendimento tanto dos leitores, quanto de pessoas que venham a dar manutenção no código algum dia.
+            Fácil de lidar com críticas, pois são com elas que conseguimos construir o nosso conhecimento em uma base forte e duradoura, também acredito que é saindo da nossa zona de conforto que conseguimos criar coisas maravilhosas.
+
+            Atualmente linguagens que possuo o conhecimento, Java Script, TypeScript, HTML, CSS, React, Python.</p>
         </div>
         <div className="about-info">
           <p><i><FontAwesomeIcon icon={faCalendarDays} /></i> Aniversário: 06 maio 1996</p>

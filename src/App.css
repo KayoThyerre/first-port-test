@@ -21,6 +21,7 @@ header {
     height: 100px;
     position: fixed;
     z-index: 2;
+    max-width: 1250px;
 }
 
 header .welcome h1 {
@@ -385,6 +386,7 @@ main .about {
     text-align: center;
     align-content: center;
     min-width: 300px;
+    max-width: 300px;
     background-color: #222;
     border-radius: 5px;
 }
@@ -541,7 +543,8 @@ main .about {
 
 .projects {
     padding: 30px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 30px;
     background-color: #151515;
@@ -549,7 +552,6 @@ main .about {
 
 .projects ul {
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 
@@ -584,21 +586,33 @@ main .about {
 
 
 .projects-box {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects-box ul{
-    display: grid;
-    margin-top: 60px;
+    flex-wrap: wrap;
     gap: 20px;
+    align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
 }
 
 .projects-box ul li {
+    max-width: 300px;
+}
+
+.projects-box ul li a{
     max-width: 100%;
     height: 100%;
     animation: animationImageButton 2s ease-in-out forwards;
+}
+
+.projects-box ul li a {
+    display: block;
+    padding: 0;
+    margin: 0; 
+    text-decoration: none;
 }
 
 .projects-box ul li img {
@@ -610,8 +624,8 @@ main .about {
 }
 
 .projects-box ul li img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
 }
 
 .projects a {

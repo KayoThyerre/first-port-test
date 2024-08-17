@@ -14,32 +14,32 @@ const Proeficiency = () => {
                     <li>
                         <i><FontAwesomeIcon icon={faReact} /></i>
                         <h3>React</h3>
-                        <p>Descrição do React</p>
+                        <p>Biblioteca JavaScript para interfaces interativas.</p>
                     </li>
                     <li>
                         <i><FontAwesomeIcon icon={faHtml5} /></i>
                         <h3>HTML</h3>
-                        <p>Descrição do HTML</p>
+                        <p>Markup para estrutura de páginas.</p>
                     </li>
                     <li>
                         <i><FontAwesomeIcon icon={faJsSquare} /></i>
                         <h3>JavaScript</h3>
-                        <p>Descrição do JavaScript</p>
+                        <p>Linguagem para programação web dinâmica.</p>
                     </li>
                     <li>
                         <i><FontAwesomeIcon icon={faFileCode} /></i>
                         <h3>TypeScript</h3>
-                        <p>Descrição do TypeScript</p>
+                        <p>JavaScript com tipagem estática.</p>
                     </li>
                     <li>
                         <i><FontAwesomeIcon icon={faCss3Alt} /></i>
                         <h3>CSS</h3>
-                        <p>Descrição do CSS</p>
+                        <p>Estilização de páginas web.</p>
                     </li>
                     <li>
                         <i><FontAwesomeIcon icon={faNodeJs} /></i>
                         <h3>Node.js</h3>
-                        <p>Descrição do Node.js</p>
+                        <p>JavaScript no servidor.</p>
                     </li>
                 </ul>
             </div>

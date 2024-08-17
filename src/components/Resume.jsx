@@ -28,12 +28,12 @@ const MyResume = () => {
         {
             period: "2016-2021",
             title: "Engenharia Mecânica, Bacharelado - UNIFEG",
-            description: "Sobre o que é a faculdade."
+            description: "Engenharia Mecânica é a área da engenharia que projeta, desenvolve e mantém sistemas e dispositivos mecânicos, aplicando princípios da física e matemática para resolver problemas técnicos e melhorar processos industriais, como máquinas, motores e estruturas."
         },
         {
-            period: "2023-2025",
+            period: "2023-2025 (Esperado)",
             title: "Sistemas para internet - UNICESUMAR",
-            description: "Sobre o que é a faculdade."
+            description: "O curso de graduação em Sistemas para Internet da EAD UniCesumar capacita profissionais a projetar e desenvolver soluções digitais para a web. A formação inclui a criação de sites, interfaces, plataformas e aplicativos, abrangendo todas as etapas necessárias para construir e conectar ferramentas digitais. Ao se formar como Tecnólogo em Sistemas para Internet, você estará preparado para enfrentar os desafios do desenvolvimento web e contribuir para a construção das estruturas que facilitam a interação online e a entrega de resultados eficazes."
         }
     ];
 
