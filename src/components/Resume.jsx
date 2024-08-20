@@ -8,19 +8,19 @@ const MyResume = () => {
 
     const experienceData = [
         {
-            period: "2022-2023",
-            title: "Título exemplo - cargo exemplo",
-            description: "descrição de exemplo sobre o trabalho"
+            period: "2021-2024",
+            title: "Guarda Civil Municipal - 3ª Classe",
+            description: "Operações policiais municipais, gerenciamento de equipes, trabalho interno administrativo com ferramentas computacionais, gerenciamento de escala, posicionamento tático de equipes em operações policiais, apoio a demais orgãos municiapais e estaduais."
         },
         {
-            period: "2022-2023",
-            title: "Título 2",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores libero recus"
+            period: "2020-2021",
+            title: "W1 Consultoria Financeira - Líder de equipe de Consultoria",
+            description: "Trabalho voltado a educação financeira do Brasileiro, focada em ensinar técnicas financeiras, organização, melhores maneiras de realizar aquisições patrimoniais, entre outros. Gerenciamento de equipe, incluindo treinamento da equipe em assuntos relacionados a parte financeira, reuniões de alinhamento e gerenciamento de agendas de clientes."
         },
         {
-            period: "2022-2023",
-            title: "Título 3",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores libero recus"
+            period: "2019 - 2020",
+            title: "Star Word - Técnico de informática",
+            description: "Manutenção de equipamentos eletrônicos (computadores, celulares, fontes, placas), realizando intalação e configuração de redes e impressoras. Conserto de placas e trocas de componentes eletrônicos."
         }
     ];
 
