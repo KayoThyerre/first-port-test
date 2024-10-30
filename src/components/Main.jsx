@@ -15,7 +15,7 @@ const Main = () => (
           <span></span>
         </div>
       </div>
-      <img src={myPhoto} alt="imagem de uma pessoa ilutrativa" />
+      <img src={myPhoto} alt="minha foto" />
       <div className="about-content">
         <div className="about-text">
           <h1>Olá, eu sou o Kayo !</h1>
