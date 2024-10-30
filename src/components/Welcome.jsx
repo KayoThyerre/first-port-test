@@ -8,7 +8,7 @@ const Welcome = () => (
             <h2>Olá, seja bem vindo !</h2>
             <Typing />
             <p>Olá eu sou o Kayo, seja bem vindo ao meu portifólio !</p>
-            <a href="https://drive.google.com/file/d/1tcPKR-I_B-EWyUF9ZLkqEIjvXkKRh5KZ/view?usp=drive_link">Download CV</a>
+            <a href="https://drive.google.com/file/d/1tcPKR-I_B-EWyUF9ZLkqEIjvXkKRh5KZ/view?usp=drive_link" target="_blank">Download CV</a>
         </div>
         <img src={myPhoto} alt="foto ilustrativa do dev" className='dev-img' />
     </section>
