@@ -555,6 +555,17 @@ main .about {
     gap: 30px;
 }
 
+.projects-models {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.projects-models ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .projects-models ul li {
     cursor: pointer;
     background-color: #222;

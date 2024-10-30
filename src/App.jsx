@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
 import './App-responsive.css'
-// import './App-responsive.css'
 import './reset.css'
 import Header from './components/Header'
 import Welcome from './components/Welcome'

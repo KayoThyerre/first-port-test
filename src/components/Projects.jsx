@@ -78,7 +78,7 @@ const Projects = () => {
                 <h1>Meu portifolio</h1>
             </div>
             <div className="projects-models">
-                <ul aria-label="Navegação entre os projetos de Kayo">
+                <ul aria-label="Navegação entre os projetos de Kayo" className="nav-buttons">
                     <li className={activeFilter === "all" ? "active" : ""} onClick={() => handleFilterClick("all")}>All</li>
                     <li className={activeFilter === "javascript" ? "active" : ""} onClick={() => handleFilterClick("javascript")}>Javascript</li>
                     <li className={activeFilter === "react" ? "active" : ""} onClick={() => handleFilterClick("react")}>React</li>
